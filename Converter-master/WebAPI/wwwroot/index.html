@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Resim Dönüştürücü</title>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+
+<body>
+
+	<section class="container-fluid anaSayfa">
+
+		
+		<div class="container">
+
+			<header class="navbar navbar-expand-md navbar-dark bottom-radius">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+				<a class="navbar-brand" href="#"> <span class="text-warning">Image</span> <span
+						class="text-white">Converter</span> </a>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"> <a class="nav-link" href="#">Anasayfa <span
+									class="sr-only">(current)</span></a> </li>
+
+						<li class="nav-item"> <a class="nav-link " href="about.html">Hakkımızda</a> </li>
+						<li class="nav-item"> <a class="nav-link " href="convert.html">Dönüştürme İşlemleri</a> </li>
+
+					</ul>
+				</div>
+			</header>
+
+
+			<div class="row" >
+				<div class="col-md-6 text-white p-0 py-4">
+					<h2 class="display-4">Fotoğraf<br>
+						Dönüştürüme Sitesi</h2>
+					<p > Bu sayfa Fırat Üniversitesi ileri programlama dersi kapsamında dr.Fatih Özkaynak tarafından
+						verilen proje kapsamında Cosinüs Sevdalıları grubunun yapmış olduğu görüntü sıkıştırma işlemini
+						yapmak için tasarlanmıştır.
+						<br>
+						Detaylı bilgiye hakkımızda sayfasından ulaşabilirsiniz.
+					</p>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container baslik">
+		<p>
+		<h2>Fotoğraf formatları</h2>
+		</p>
+		<p>ve</p>
+		<h3>Algoritmalar</h3>
+
+	</section>
+
+
+	<section class="container kartYapılari">
+
+		<div class="row">
+			<div class="col-md-4 mb-2">
+				<div class="card d-block p-3 shadow">
+
+					<div class="card-body">
+						<h5>JPEG Uzantılı Fotoğraf</h5>
+						<p>Bu butona bastığınız zaman yönlendirilen sayfada JPEG uzantılı dosyaların dönüştürme
+							sıkıştırma işlemleri yapılır</p>
+						<span>
+							<a onclick="jpeg()">
+								<button type="button" class="btn btn-outline-danger">JPEG</button>
+							</a>
+						</span>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="col-md-4 mb-2">
+				<div class="card d-block p-3 shadow">
+
+					<div class="card-body">
+						<h5>PNG Uzantılı Fotoğraf</h5>
+						<p>Bu butona bastığınız zaman yönlendirilen sayfada PNG uzantılı dosyaların dönüştürme
+							sıkıştırma işlemleri yapılır</p>
+						<span>
+							<a onclick="png()" href="#" target="">
+								<button type="button" class="btn btn-outline-danger">PNG</button>
+							</a>
+						</span>
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<div class="col-md-4 mb-2">
+				<div class="card d-block p-3 shadow">
+
+					<div class="card-body">
+						<h5>GIF Uzantılı Fotoğraf</h5>
+						<p>Bu butona bastığınız zaman yönlendirilen sayfada GIF uzantılı dosyaların dönüştürme
+							sıkıştırma işlemleri yapılır</p>
+						<span>
+							<a onclick="gif()" href="#" target="">
+								<button type="button" class="btn btn-outline-danger">GIF</button>
+							</a>
+						</span>
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<div class="col-md-4 mb-2">
+				<div class="card d-block p-3 shadow">
+
+					<div class="card-body">
+						<h5>TIFF Uzantılı Fotoğraf</h5>
+						<p>Bu butona bastığınız zaman yönlendirilen sayfada TIFF uzantılı dosyaların dönüştürme
+							sıkıştırma işlemleri yapılır</p>
+						<span>
+							<a onclick="tiff()" href="#" target="">
+								<button type="button" class="btn btn-outline-danger">TIFF</button>
+							</a></span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-4 mb-2">
+				<div class="card d-block p-3 shadow">
+
+					<div class="card-body">
+						<h5>JP2 Uzantılı Fotoğraf</h5>
+						<p>Bu butona bastığınız zaman yönlendirilen sayfada JP2 uzantılı dosyaların dönüştürme
+							sıkıştırma işlemleri yapılır</p>
+						<span>
+							<a onclick="jp2()" href="#" target="">
+								<button type="button" class="btn btn-outline-danger">JP2</button>
+							</a>
+						</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-4 mb-2">
+				<div class="card d-block p-3 shadow">
+
+					<div class="card-body">
+						<h5>WEBP Uzantılı Fotoğraf</h5>
+						<p>Bu butona bastığınız zaman yönlendirilen sayfada WEBP uzantılı dosyaların dönüştürme
+							sıkıştırma işlemleri yapılır</p>
+						<span>
+							<a onclick="webp()" href="#" target="">
+								<button type="button" class="btn btn-outline-danger">WEBP</button>
+							</a>
+						</span>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+		</div>
+	</section>
+	<footer class="container-fluid">
+		<div class="container">
+			<div class="row">
+
+				<div class="row lisans justify-content-center">Copyright </div>
+
+			</div>
+
+
+	</footer>
+
+
+	
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="jqueryui/jquery-ui.js"></script>
+	
+</body>
+
+</html>
